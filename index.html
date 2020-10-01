@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h1> HTML Tables</h1>
+                <ul>
+                    <li>
+                        Header
+                    </li>
+                    <li>
+                        Rows
+                    </li>
+                    <li>
+                        Body
+                    </li>
+                    <li>
+                        Styles
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2>Create a table from scratch</h2>
+                <p>With the help of two simple tags</p>
+                <code>
+                    &lt;table&gt;&#10;                                             &lt;/table&gt; <br>
+                </code>
+            </section>
+            <section>
+                <h2> Headers</h2>
+                <p>Add the head elements with the help of the following tags :</p>
+                <code>  <span class="fragment highlight-red">&lt;th&gt;Description&lt;/th&gt;</span>
+                </code>
+                <p>
+                <table>
+                    <thead>
+                        <th>Name</th>
+                        <th>Description</th>
+                    </thead>
+                </table>
+                </p>
+                <p>
+                    The headers can be styled and customised with CSS.
+                </p>
+            </section>
+            <section>
+                <h2>Rows</h2>
+
+                <ul><li>
+                    Use the below syntax to create rows in the table
+                </li></ul>
+               <code style="color: brown;">
+                &lt;tr&gt;...row...&lt;/tr&gt; <br>
+                &lt;tr&gt;...row...&lt;/tr&gt; 
+               </code>
+
+                
+            </section>
+            <section>
+                <h2>Input Table Data</h2>
+                <ul>
+                    <li>Table data can be parsed through an element called <strong style="color: chartreuse;">Table Data {&lt;td&gt;}</strong></li>
+                </ul>
+                <code>
+                    &lt;td&gt;....UserName....&lt;/td&gt; <br>
+                    &lt;td&gt;....UserName....&lt;/td&gt;
+
+
+                </code>
+            </section>
+            <section>
+                <section>
+                    <h2>Final Layout</h2>
+                    <p>Headers and head data</p>
+                    <table >
+                        <tr>
+                            <th>Name</th>
+                            <th>Address</th>
+                        </tr>
+                        <tr>
+                            
+                        </tr>
+                        
+                    </table>
+                </section>
+                <section>
+                    <h2>Rows and Data</h2>
+                    <table ">
+                        <tr>
+                            <th>Name</th>
+                            <th>Address</th>
+                        </tr>
+                        <tr>
+                            <td>John</td>
+                            <td>Athens</td>
+                        </tr>
+                        <tr>
+                            <td>Alexi</td>
+                            <td>Crete</td>
+                        </tr>
+                        <tr>
+                            <td>Humphrey</td>
+                            <td>Pireaus</td>
+                        </tr>
+                    </table>
+                </section>
+                <section>
+                    <h2>CSS Border custom styles</h2>
+                    <p>That's it, time to go back up.</p>
+                    <br>
+                    <table style="border: chocolate solid ;">
+                        <tr>
+                            <th>Name</th>
+                            <th>Address</th>
+                        </tr>
+                        <tr>
+                            <td>John</td>
+                            <td>Athens</td>
+                        </tr>
+                        <tr>
+                            <td>Alexi</td>
+                            <td>Crete</td>
+                        </tr>
+                        <tr>
+                            <td>Humphrey</td>
+                            <td>Pireaus</td>
+                        </tr>
+                    </table>
+                </section>
+            </section>
+        </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
+        Reveal.initialize({
+            hash: true,
+
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+        });
+    </script>
+</body>
+
+</html>
